@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <title>QuizCoffee</title>
+</head>
+<body>
+  <div class="bg-dark text-center text-light py-3">
+    <h1 class="display-1 fw-bold">QuizCoffee</h1>
+    <p class="fs-3 fw-light fst-italic opacity-75">Teste seu conhecimento sobre café!</p>
+  </div>
+
+  <form class="container d-flex flex-column align-items-center gap-4 py-5">
+    <div class="result d-none card bg-dark text-light text-center display-6 w-75 py-4 px-5">
+      <p class="fw-normal">Você acertou <span class="score fw-bold">0 de 4 perguntas</span>!</p>
+      <p class="feedback fw-light fst-italic">Gabaritou!</p>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="fs-5 w-75 card p-4">
+      <p class="prompt">Qual país é o maior produtor de café do mundo?</p>
+
+      <label for="one-A">
+        <input id="one-A" value="A" type="radio" name="one">
+        Brasil
+      </label>
+
+      <label for="one-B">
+        <input id="one-B" value="B" type="radio" name="one">
+        Colômbia
+      </label>
+
+      <label for="one-C">
+        <input id="one-C" value="C" type="radio" name="one">
+        Etiópia
+      </label>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="fs-5 w-75 card p-4">
+      <p class="prompt">Qual é o processo em que os grãos de café são retirados da polpa e secos ao sol?</p>
+
+      <label for="two-A">
+        <input id="two-A" value="A" type="radio" name="two">
+        Torrefação
+      </label>
+
+      <label for="two-B">
+        <input id="two-B" value="B" type="radio" name="two">
+        Moagem
+      </label>
+
+      <label for="two-C">
+        <input id="two-C" value="C" type="radio" name="two">
+        Secagem natural
+      </label>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="fs-5 w-75 card p-4">
+      <p class="prompt">Qual tipo de café é conhecido por ser mais forte e concentrado, geralmente feito com uma máquina de pressão?</p>
+
+      <label for="three-A">
+        <input id="three-A" value="A" type="radio" name="three">
+        Café filtrado
+      </label>
+
+      <label for="three-B">
+        <input id="three-B" value="B" type="radio" name="three">     
+        Espresso
+      </label>
+
+      <label for="three-C">
+        <input id="three-C" value="C" type="radio" name="three">
+        Café instantâneo
+      </label>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="fs-5 w-75 card p-4">
+      <p class="prompt">Qual destes métodos de preparo de café envolve despejar água quente sobre café moído e deixar passar através de um filtro?</p>
+
+      <label for="four-A">
+        <input id="four-A" value="A" type="radio" name="four">
+        Método de infusão
+      </label>
+
+      <label for="four-B">
+        <input id="four-B" value="B" type="radio" name="four">
+        French press
+      </label>
+
+      <label for="four-C">
+        <input id="four-C" value="C" type="radio" name="four">
+        AeroPress
+      </label>
+    </div>
+
+    <button class="btn btn-dark fs-4 w-75 py-3">Confirmar</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
