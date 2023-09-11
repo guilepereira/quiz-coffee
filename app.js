@@ -43,7 +43,7 @@ const showResult = () => {
       feedbackStatus = 'Esse tá forte! 💪🏽'
       break
     case 4:
-      feedbackStatus = 'Perfeito igual fresco 🥹☕'
+      feedbackStatus = 'Perfeito igual café fresco 🥹☕'
   }
 
   result.classList.remove('d-none')
